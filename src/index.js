@@ -4,6 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {Button, Container, Row, Col, Card} from "react-bootstrap";
 import quotes from "./quotes.json";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const colors = [
   '#16a085',
@@ -32,14 +33,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='position-relative' style={{height: "100vh", color: this.state.currentColor, backgroundColor: this.state.currentColor}}>
+      <div className='position-relative' id='quote-box' style={{height: "100vh", color: this.state.currentColor, backgroundColor: this.state.currentColor}}>
         <Card className='text-center position-absolute top-50 start-50 translate-middle' style={{width: "30rem"}}>
-          <Card.Title>Title</Card.Title>
-          <Card.Subtitle>Subtitle</Card.Subtitle>
           <Container>
-            <Row>
+            <Row className='mt-5 mb-4 px-5'>
               <Col>
-                <Button>New Quote</Button>
+                <Card.Title id="text">" Life isn’t about getting and having, it’s about giving and being.</Card.Title>
+              </Col>
+            </Row>
+            <Row>
+              <Col className='text-end'>
+                <Card.Subtitle id="author">- Kevin Kruse</Card.Subtitle>
+              </Col>
+            </Row>
+            <Row className='my-4'>
+              <Col md={4} className='ms-auto'>
+                <Button id="new-quote" style={{backgroundColor: this.state.currentColor}}>New Quote</Button>
               </Col>
             </Row>
           </Container>
