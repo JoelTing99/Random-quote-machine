@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Button, Container, Row, Col, Card} from "react-bootstrap";
 import quotes from "./quotes.json";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const colors = [
   '#16a085',
