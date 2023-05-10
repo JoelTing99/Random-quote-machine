@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "onFocusChange",
+    "editor.wordWrap": "on",
+    "editor.accessibilityPageSize": 8,
+    "editor.fontSize": 16
+}
